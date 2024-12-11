@@ -30,7 +30,10 @@ window.addEventListener("load", function(){
     console.log(ownedFactories);
 
     setInterval(function(){
-        console.log('tick');
+       score += ownedFactories
+            .map(x=> x.count * x.isAdding)
+            .reduce((partial_sum, number)=> partial_sum + number, 0);
+        scoreBlock.innerText = score;    
     }, 1000)
 
 });

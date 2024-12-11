@@ -27,7 +27,7 @@ body {
 }
 
 .main-game .click-zone {
-    background: red;
+    background-image:url(catjam-cat-dancing.gif);
     width: 500px;
     height: 500px;
     cursor: pointer;
